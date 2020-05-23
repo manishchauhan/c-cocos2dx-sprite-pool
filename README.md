@@ -7,7 +7,7 @@ how to use it
 
 	auto coinPoolManager=new DinoPoolManager<Coin>(25,"store_coin.png");
 
-#add sprites to the stage outside to your view port
+#add sprites in most cases out of your view port
 
 	    for(const auto &coin:coinPoolManager->getPoolItems())
 	    {
@@ -17,6 +17,6 @@ how to use it
 	    }
 
 
-	    
+
 
 
