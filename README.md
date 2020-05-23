@@ -1,9 +1,13 @@
 # c-cocos2dx-sprite-pool
-a simple object pool used to store in sprites in cocos2dx (custom spirtes)
+a simple sprite pool used to store sprites and used them later for stable fps.(only used for custom sprite but you can change it based on your need.)
 
 how to use it
 
+#create a PoolManager instance.
+
 	auto coinPoolManager=new DinoPoolManager<Coin>(25,"store_coin.png");
+
+#add sprites to the stage outside to your view port
 
 	    for(const auto &coin:coinPoolManager->getPoolItems())
 	    {
@@ -11,5 +15,8 @@ how to use it
 		this->addChild(coin);
 		CoinVector.pushBack(coin);
 	    }
+
+
+	    
 
 
